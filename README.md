@@ -1,10 +1,10 @@
 # ChessAssist
 
-Un assistant intelligent pour vous aider à progresser sur chess.com.
+Un assistant intelligent pour aider à progresser.
 
 ## Fonctionnalités
 
-- 🔍 **Analyse de parties** : Analysez vos parties chess.com avec Stockfish
+- 🔍 **Analyse de parties** : Analysez vos parties avec Stockfish
 - 📊 **Évaluation de positions** : Obtenez des évaluations précises de positions
 - 📖 **Recommandations d'ouvertures** : Suggestions d'ouvertures basées sur votre style
 - 📈 **Statistiques de progression** : Suivez vos progrès au fil du temps
@@ -21,12 +21,6 @@ Un assistant intelligent pour vous aider à progresser sur chess.com.
 
 ## Configuration
 
-Créez un fichier `.env` à la racine du projet avec :
-
-```
-CHESS_COM_USERNAME=votre_nom_utilisateur
-STOCKFISH_PATH=/chemin/vers/stockfish
-```
 
 ## Utilisation
 
@@ -61,7 +55,3 @@ Ce projet utilise Python 3.8+ et les bibliothèques suivantes :
 - `requests` pour l'API chess.com
 - `click` pour l'interface CLI
 - `rich` pour l'affichage enrichi
-
-## Licence
-
-MIT License
