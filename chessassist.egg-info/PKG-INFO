@@ -1,0 +1,100 @@
+Metadata-Version: 2.4
+Name: chessassist
+Version: 0.1.0
+Summary: Assistant intelligent pour progresser sur chess.com
+Author: ChessAssist Team
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Games/Entertainment :: Board Games
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: python-chess>=1.999
+Requires-Dist: requests>=2.31.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: stockfish>=3.28.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: click>=8.1.0
+Requires-Dist: rich>=13.5.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ChessAssist
+
+Un assistant intelligent pour vous aider à progresser sur chess.com.
+
+## Fonctionnalités
+
+- 🔍 **Analyse de parties** : Analysez vos parties chess.com avec Stockfish
+- 📊 **Évaluation de positions** : Obtenez des évaluations précises de positions
+- 📖 **Recommandations d'ouvertures** : Suggestions d'ouvertures basées sur votre style
+- 📈 **Statistiques de progression** : Suivez vos progrès au fil du temps
+- 🎯 **Détection d'erreurs** : Identifiez et corrigez vos erreurs typiques
+
+## Installation
+
+1. Clonez ce repository
+2. Installez les dépendances :
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Configurez votre environnement (voir Configuration)
+
+## Configuration
+
+Créez un fichier `.env` à la racine du projet avec :
+
+```
+CHESS_COM_USERNAME=votre_nom_utilisateur
+STOCKFISH_PATH=/chemin/vers/stockfish
+```
+
+## Utilisation
+
+```bash
+# Analyser une partie récente
+python -m chessassist analyze-last-game
+
+# Obtenir des recommandations d'ouvertures
+python -m chessassist openings --color white
+
+# Voir vos statistiques
+python -m chessassist stats
+```
+
+## Structure du projet
+
+```
+chessassist/
+├── core/           # Logique métier principale
+├── analysis/       # Modules d'analyse des parties
+├── openings/       # Système de recommandations d'ouvertures
+├── chess_com/      # Interface avec chess.com API
+├── cli/           # Interface en ligne de commande
+└── utils/         # Utilitaires
+```
+
+## Développement
+
+Ce projet utilise Python 3.8+ et les bibliothèques suivantes :
+- `python-chess` pour la manipulation des parties
+- `stockfish` pour l'analyse de positions
+- `requests` pour l'API chess.com
+- `click` pour l'interface CLI
+- `rich` pour l'affichage enrichi
+
+## Licence
+
+MIT License

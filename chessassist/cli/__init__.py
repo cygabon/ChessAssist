@@ -1,0 +1,3 @@
+"""
+Module CLI pour ChessAssist
+"""

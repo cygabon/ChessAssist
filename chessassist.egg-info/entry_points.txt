@@ -1,0 +1,2 @@
+[console_scripts]
+chessassist = chessassist.__main__:cli

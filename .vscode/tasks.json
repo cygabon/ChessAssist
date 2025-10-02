@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ChessAssist Demo",
+			"type": "shell",
+			"command": "python examples/demo.py",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "ChessAssist - Recommandations d'ouvertures",
+			"type": "shell",
+			"command": "/data/opt/ChessAssist/.venv/bin/python -m chessassist openings --color both",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
